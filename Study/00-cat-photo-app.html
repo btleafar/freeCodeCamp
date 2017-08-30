@@ -4,8 +4,13 @@
 		color: red;
 	}
 
-	.smaller-image {
-		width: 100px;
+	h2 {
+		font-family: Lobster, Monospace;
+	}
+
+	p {
+		font-size: 16px;
+		font-family: Monospace;
 	}
 
 	.thick-green-border {
@@ -15,13 +20,16 @@
 		border-radius: 50%;
 	}
 
-	h2 {
-		font-family: Lobster, Monospace;
+	.smaller-image {
+		width: 100px;
 	}
 
-	p {
-		font-size: 16px;
-		font-family: Monospace;
+	.silver-background {
+		background-color: silver;
+	}
+
+	#cat-photo-form {
+		background-color: green;
 	}
 </style>
 
@@ -29,19 +37,27 @@
 
 <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
 
-<p>Things cats love:</p>
-<ul> <!-- ul stans for unordered lists and li for list (elements) -->
-	<li>cat nip</li>
-	<li>laser pointers</li>
-	<li>lasagna</li>
-</ul>
-<p>Top 3 things cats hate:</p>
-<ol><!-- ol stands for ordered list -->
-	<li>flea treatment</li>
-	<li>thunder</li>
-	<li>other cats</li>
-</ol>
-<form action="/submit-cat-photo">
+<div class="silver-background">
+	<p>Things cats love:</p>
+	<ul> <!-- ul stans for unordered lists and li for list (elements) -->
+		<li>cat nip</li>
+		<li>laser pointers</li>
+		<li>lasagna</li>
+	</ul>
+	<p>Top 3 things cats hate:</p>
+	<ol><!-- ol stands for ordered list -->
+		<li>flea treatment</li>
+		<li>thunder</li>
+		<li>other cats</li>
+	</ol>
+</div>
+
+<form action="/submit-cat-photo" id="cat-photo-form">
+	<label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+	<label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+	<label><input type="checkbox" name="personality" checked> Loving</label>
+	<label><input type="checkbox" name="personality"> Lazy</label>
+	<label><input type="checkbox" name="personality"> Energetic</label>
 	<input type="text" placeholder="cat photo URL" required>
 	<button type="submit">Submit</button>
 </form>

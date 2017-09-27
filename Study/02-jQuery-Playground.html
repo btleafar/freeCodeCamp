@@ -1,7 +1,15 @@
+<!-- Notes about jQuery syntax
+* All jQuery functions start with a $, usually referred to as a dollar sign operator, or as bling,
+* To select elements such as buttons we just include them inside the cuotes,
+* We target the div elements with the class well by using the $(".well") selector,
+* And target your button element with the id target3 by using the $("#target3") selector.
+-->
 
 <script>
 	$(document).ready(function() {
-
+		$("button").addClass("animated bounce");
+		$(".well").addClass("animated shake");
+		$("#target3").addClass("animated fadeOut");
 	});
 </script>
 

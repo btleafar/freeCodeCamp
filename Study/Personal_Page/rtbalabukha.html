@@ -1,0 +1,982 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+  <!--- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8" />
+  <title>CV :: José Ramón Alemán Bendiburg</title>
+  <meta name="description" content="
+  Personal website of José Ramón Alemán Bendiburg (jraleman).
+  " />
+  <meta name="keywords" content="
+  Jose Ramon Aleman Bendiburg Panama" />
+  <meta name="author" content="jraleman" />
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Base URI
+  ==================================================
+  <base href="https://jraleman.com/" target="_self">
+  -->
+
+  <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+
+  <!-- CSS Stylesheets
+  ================================================== -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui-1.8.16.custom.css" id="theme" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/lightbox.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/owl.carousel.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/owl.theme.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/jquery.fancybox.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/custom.css" />
+
+  <!-- Fallback CSS
+  ================================================== -->
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="css/fallback.css" />
+  </noscript>
+
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/fallback.css" />
+  <![endif]-->
+
+  <!-- Fonts
+  ================================================== -->
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' type='text/css'>
+
+  <!-- Mordenizr Script
+  ================================================== -->
+  <script src="js/modernizr.js"></script>
+
+</head>
+
+<body>
+
+  <div class="wrapper" id="wrapper">
+
+    <!-- Navigation Bar
+    ================================================== -->
+    <header>
+      <div id="banner"></div>
+      <div class="menu">
+        <div class="navbar-wrapper">
+          <div class="container">
+            <div class="navwrapper">
+              <div class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"></a> </div>
+                  <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                      <li class="menuItem" id="navbar-home"><a href="#wrapper">Home</a></li>
+                      <li class="menuItem"><a href="#about">About</a></li>
+                      <li class="menuItem"><a href="#education">Education</a></li>
+                      <li class="menuItem"><a href="#certificate">Certificates</a></li>
+                      <li class="menuItem"><a href="#languages">Languages</a></li>
+                      <li class="menuItem"><a href="#experience">Work Experience</a></li>
+                      <li class="menuItem"><a href="#portfolio">Portfolio</a></li>
+                      <li class="menuItem"><a href="#contact">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!--
+	  <div class="row" style="background-color: #344C6D;">
+		  <a href="index.html" class="bntDownload">
+				  <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
+				  Go back
+		  </a>
+	  </div>
+-->
+
+    <style media="screen">
+      #presentation {
+        width: 480px;
+        height: 120px;
+        padding: 20px;
+        margin: auto;
+        background: #FFF;
+        margin-top: 10px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        transition: all 0.3s;
+        border-radius: 3px;
+      }
+
+      #presentation:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        transition: all 0.3s;
+        transform: translateZ(10px);
+      }
+
+      #floating-button {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: #344C6D;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        cursor: pointer;
+        box-shadow: 0px 2px 5px #666;
+        z-index: 9999;
+      }
+
+      .plus {
+        color: white;
+        position: absolute;
+        top: 0;
+        display: block;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        line-height: 62px;
+        font-size: 32px;
+        font-family: 'Roboto';
+        font-weight: 300;
+        animation: plus-out 0.3s;
+        transition: all 0.3s;
+      }
+
+      #container-floating {
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        bottom: 30px;
+        right: 30px;
+        z-index: 50px;
+      }
+
+      #container-floating:hover {
+        height: 400px;
+        width: 90px;
+        padding: 30px;
+      }
+
+      a {
+        text-decoration: none !important;
+      }
+
+      a:hover {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+
+
+
+
+    <!-- floating button -->
+    <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create">
+      <p class="plus">
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </p>
+    </div>
+
+
+
+
+    <!-- About Section
+      ================================================== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="heading">
+          <h2>About Me</h2>
+          <p>A small introduction</p>
+        </div>
+        <div class="row">
+          <div class="pull-right col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 proPic" style="padding-bottom: 26px;">
+            <img src="images/me.png" width="300" height="300" alt="" class="img-circle topmar">
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+            <h3>I'm <strong>José Ramón,</strong></h3>
+            <h4 class="subHeading">a Panamanian Engineer, Developer, Inventor, Designer, and Musician.</h4>
+            <p>
+              Some of my areas of expertise include software development (primarily in C and Python), web design (mostly front-end, and a bit of back-end), and electronics design. Thinking in a logical and clear way has helped me during my academic and professional
+              career, by being a problem-solver and someone who can be relied on. My friends describe me as honest, responsible, hard worker, and a good listener. If not spending my time working or studying, you will probably find me playing the bass
+              guitar, playing board games or maybe a bit of chess, listening to music, reading Quora or a good book, exploring or just wandering outside, or simply just having a good time with my friends. I believe that we only live once, and we must
+              give our 100%, outdo ourselves, and always be up for new challenges.
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Education Section
+        =============================================== -->
+    <section class="education" id="education">
+      <div class="container">
+        <div class="heading">
+          <h2>Formal Education</h2>
+          <p>This is what I have achieved so far</p>
+        </div>
+
+        <!-- 42 -->
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2" style="text-align: center">
+            <img class="school-logo" src="images/logos/42.png" />
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+            <div class="arrowpart"></div>
+            <div class="exCon">
+              <h4>Software Development</h4>
+              <h5>Ecole 42 Silicon Valley <br />
+                    <i>In Progress - Expected 2019</i></h5>
+              <button class="accordion" style="margin-bottom: 15px;"><i class="fa fa-info-circle" aria-hidden="true"></i> More Info</button>
+              <div class="panel">
+                <p style="margin-top: 15px;">
+                  It transcends the programming activity, one of the fundamental pillars used to create applications, programs, and other solutions. It includes the previous analysis of the situation, the design of the project, the development of the software, the necessary
+                  tests to confirm its correct operation and the implementation of the system.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MBA -->
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2" style="text-align: center">
+            <img class="school-logo" src="images/logos/cep.png" />
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+            <div class="arrowpart"></div>
+            <div class="exCon">
+              <h4>Master of Business Administration with Emphasis in Business Management</h4>
+              <h5>Universidad Latina de Panamá <br />
+                    <i>In Progress - Expected 2017</i></h5>
+              <button class="accordion" style="margin-bottom: 15px;"><i class="fa fa-info-circle" aria-hidden="true"></i> More Info</button>
+              <div class="panel">
+                <p style="margin-top: 15px; font-weight: bold;">GPA: 2.82 out of 3.00</p>
+                <p><a href="#" rel="lightbox-demo" title="Diploma" class="diplomaBtn lb">See Diploma</a></p>
+                <p>
+                  Oriented in the knowledge of business, and in the operational functions of a company, it is more specialized and seeks a training in economic and administrative matters. Prepares for the needs and uses of resources that a company, or even a sector must
+                  meet in the administration and decision making of their business.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ULAT -->
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2" style="text-align: center">
+            <img class="school-logo" src="images/logos/ulat.png" />
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+            <div class="arrowpart"></div>
+            <div class="exCon">
+              <h4>Bachelor in Mechatronics Engineering</h4>
+              <h5>Universidad Latina de Panamá <br />
+                    <i>April 2015</i></h5>
+              <button class="accordion" style="margin-bottom: 15px;"><i class="fa fa-info-circle" aria-hidden="true"></i> More Info</button>
+              <div class="panel">
+                <p style="margin-top: 15px; font-weight: bold;">GPA: 2.70 out of 3.00</p>
+                <p><a href="images/diplomas/diploma_ULAT_Mec.jpg" rel="lightbox-demo" title="Diploma" class="diplomaBtn lb">See Diploma</a></p>
+                <p>
+                  Discipline concerned with the research, design, implementation and maintenance of intelligent engineered products and processes enabled by the integration of mechanical, electronic, computer, and software engineering technologies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AMP -->
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2" style="text-align: center">
+            <img class="school-logo" src="images/logos/amp.png" />
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+            <div class="arrowpart"></div>
+            <div class="exCon">
+              <h4>Professional Studies in Music (Mention: Electric Bass)</h4>
+              <h5>Academia de Música de Panamá<br />
+                    <i>December 2014</i></h5>
+              <button class="accordion" style="margin-bottom: 15px;"><i class="fa fa-info-circle" aria-hidden="true"></i> More Info</button>
+              <div class="panel">
+                <p style="margin-top: 15px; font-weight: bold;">Grade: 4.7 out of 5.0</p>
+                <p><a href="images/diplomas/diploma_AMP.jpg" rel="lightbox-demo" title="Diploma" class="diplomaBtn lb">See Diploma</a></p>
+                <p>
+                  Emphasizes critical thinking, writing, and communication skills grounded in practical musical experience, building musical foundations in applied study, musicianship skills, and music history.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAS -->
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2" style="text-align: center">
+            <img class="school-logo" src="images/logos/pas.png" />
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+            <div class="arrowpart"></div>
+            <div class="exCon">
+              <h4>High School Diploma with Specialty in Science and Informatics</h4>
+              <h5>Panamerican School <br />
+                    <i>December 2010</i></h5>
+              <button class="accordion" style="margin-bottom: 15px;"><i class="fa fa-info-circle" aria-hidden="true"></i> More Info</button>
+              <div class="panel">
+                <p style="margin-top: 15px; font-weight: bold;">Grade: 4.4 out of 5.0</p>
+                <p><a href="images/diplomas/diploma_PAS.jpg" rel="lightbox-demo" title="Diploma" class="diplomaBtn lb">See Diploma</a></p>
+                <p>
+                  Underlines the link between the humanistic tradition, and the scientific culture. It covers a full and wide range of disciplines, including literature, mathematics, physics, chemistry, biology, history, philosophy, languages and culture, the history of
+                  art, and computer science.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="certificate" id="certificate">
+      <div class="container">
+        <div class="heading">
+          <h2>Certificates</h2>
+          <p>Don't get behind, keep learning!</p>
+        </div>
+
+        <div id="certificate-terms" class="certificate-menu">
+          <ul>
+            <li><a id="all" class="active certificateBtn" href="#">Show All</a></li>
+            <li><a id="cs" class="certificateBtn" href="#">Computer Science</a></li>
+            <li><a id="ckt" class="certificateBtn" href="#">Electronics</a></li>
+            <li><a id="entrp" class="certificateBtn" href="#">Enterprenuership</a></li>
+            <li><a id="music" class="certificateBtn" href="#">Music</a></li>
+            <li><a id="mech" class="certificateBtn" href="#">Mechanics</a></li>
+            <li><a id="misc" class="certificateBtn" href="#">Others</a></li>
+          </ul>
+        </div>
+
+        <div id="certificates-hidden" class="hide"></div>
+
+        <div class="customNavigation">
+          <a class="btn prev"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a>
+          <a class="btn next">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+
+        <div id="certificates-carousel" class="owl-carousel">
+
+          <div class="certificate cs">
+            <a class="certificateTitle" href="files/certificates/coursera/python.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/rice.png" />
+                  <h3>An Introduction to Interactive Programming in Python</h3>
+                </a>
+            <h5>Rice University</h5>
+          </div>
+
+          <div class="certificate misc">
+            <a class="certificateTitle" href="files/certificates/coursera/nanotech.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/rice.png" />
+                  <h3>Nanotechnology: The Basics</h3>
+                </a>
+            <h5>Rice University</h5>
+          </div>
+
+          <div class="certificate cs">
+            <a class="certificateTitle" href="files/certificates/coursera/principlescomputing.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/rice.png" />
+                  <h3>Principles of Computing</h3>
+                </a>
+            <h5>Rice University</h5>
+          </div>
+
+          <div class="certificate entrp">
+            <a class="certificateTitle" href="files/certificates/coursera/ideas.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/maryland.png" />
+                  <h3>Developing Innovative Ideas for New Companies: The First Step in Entrepreneurship</h3>
+                </a>
+            <h5>University of Maryland, College Park</h5>
+          </div>
+
+          <div class="certificate entrp">
+            <a class="certificateTitle" href="files/certificates/coursera/innovative.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/maryland.png" />
+                  <h3>Innovation for Entrepreneurs: From Idea to Marketplace</h3>
+                </a>
+            <h5>University of Maryland, College Park</h5>
+          </div>
+
+          <div class="certificate entrp">
+            <a class="certificateTitle" href="files/certificates/coursera/venturefinance.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/maryland.png" />
+                  <h3>New Venture Finance: Startup Funding for Entrepreneurs</h3>
+                </a>
+            <h5>University of Maryland, College Park</h5>
+          </div>
+
+          <div class="certificate misc">
+            <a class="certificateTitle" href="files/certificates/coursera/usablesec.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/maryland.png" />
+                  <h3>Usable Security</h3>
+                </a>
+            <h5>University of Maryland, College Park</h5>
+          </div>
+
+          <div class="certificate cs">
+            <a class="certificateTitle" href="files/certificates/coursera/android1.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/maryland.png" />
+                  <h3>Programming Mobile Applications for Android Handheld Systems: Part 1</h3>
+                </a>
+            <h5>University of Maryland, College Park</h5>
+          </div>
+
+          <div class="certificate cs">
+            <a class="certificateTitle" href="files/certificates/coursera/android2.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/maryland.png" />
+                  <h3>Programming Mobile Applications for Android Handheld Systems: Part 2</h3>
+                </a>
+            <h5>University of Maryland, College Park</h5>
+          </div>
+
+          <div class="certificate cs">
+            <a class="certificateTitle" href="files/certificates/coursera/webapps.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/new-mexico.png" />
+                  <h3>Web Application Architectures</h3>
+                </a>
+            <h5>University of New Mexico</h5>
+          </div>
+
+          <div class="certificate cs ckt">
+            <a class="certificateTitle" href="files/certificates/coursera/digitalsys.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/uab.png" />
+                  <h3>Digital Systems - Sistemas Digitales: De las puertas lógicas al procesador</h3>
+                </a>
+            <h5>Universitat Autònoma de Barcelona</h5>
+          </div>
+
+          <div class="certificate music">
+            <a class="certificateTitle" href="files/certificates/coursera/songwriting.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/berklee.png" />
+                  <h3>Songwriting</h3>
+                </a>
+            <h5>Berklee College of Music</h5>
+          </div>
+
+          <div class="certificate music">
+            <a class="certificateTitle" href="files/certificates/coursera/production.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/berklee.png" />
+                  <h3>Introduction to Music Production</h3>
+                </a>
+            <h5>Berklee College of Music</h5>
+          </div>
+
+          <div class="certificate music">
+            <a class="certificateTitle" href="files/certificates/coursera/music.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/berklee.png" />
+                  <h3>Developing Your Musicianship</h3>
+                </a>
+            <h5>Berklee College of Music</h5>
+          </div>
+
+          <div class="certificate ckt misc">
+            <a class="certificateTitle" href="files/certificates/coursera/opv.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/dtu.png" />
+                  <h3>Organic Solar Cells - Theory and Practice</h3>
+                </a>
+            <h5>Technical University of Denmark</h5>
+          </div>
+
+          <div class="certificate cs ckt mech">
+            <a class="certificateTitle" href="files/certificates/coursera/robots.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/georgia.png" />
+                  <h3>Control of Mobile Robots</h3>
+                </a>
+            <h5>Georgia Institute of Technology</h5>
+          </div>
+
+          <div class="certificate cs">
+            <a class="certificateTitle" href="files/certificates/coursera/mlearning.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/stanford.png" />
+                  <h3>Machine Learning</h3>
+                </a>
+            <h5>Stanford University</h5>
+          </div>
+
+          <div class="certificate cs">
+            <a class="certificateTitle" href="files/certificates/stanford/cs101.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/stanford.png" />
+                  <h3>Computer Science 101</h3>
+                </a>
+            <h5>Stanford Online</h5>
+          </div>
+
+          <div class="certificate cs ckt">
+            <a class="certificateTitle" href="files/certificates/coursera/hwsw.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/washington.png" />
+                  <h3>The Hardware/Software Interface</h3>
+                </a>
+            <h5>University of Washington</h5>
+          </div>
+
+          <div class="certificate cs misc">
+            <a class="certificateTitle" href="files/certificates/coursera/internet.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/michigan.png" />
+                  <h3>Internet History, Technology, and Security</h3>
+                </a>
+            <h5>University of Michigan</h5>
+          </div>
+
+          <div class="certificate cs ckt">
+            <a class="certificateTitle" href="files/certificates/edx/6002.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/mit.png" />
+                  <h3>EECS.6.002x: Circuits and Electronics</h3>
+                </a>
+            <h5>Massachusetts Institute of Technology</h5>
+          </div>
+
+          <div class="certificate cs ckt">
+            <a class="certificateTitle" href="files/certificates/edx/601.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/ut.png" />
+                  <h3>UT.6.01x Embedded Systems - Shape the World</h3>
+                </a>
+            <h5>University of Texas System</h5>
+          </div>
+
+          <div class="certificate mech">
+            <a class="certificateTitle" href="files/certificates/inadeh/hidraulica.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/inadeh.png" />
+                  <h3>Fundamentos de Oleo Hidráulica</h3>
+                </a>
+            <h5>INADEH</h5>
+          </div>
+
+          <div class="certificate mech">
+            <a class="certificateTitle" href="files/certificates/inadeh/CNC-I.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/inadeh.png" />
+                  <h3>Fundamentos de Torno Convencional e Inducción a la Programación de Torno CNC</h3>
+                </a>
+            <h5>INADEH</h5>
+          </div>
+
+          <div class="certificate mech">
+            <a class="certificateTitle" href="files/certificates/inadeh/CNC-II.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/inadeh.png" />
+                  <h3>Fundamentos de Fresadora Convencional e Inducción a la Programacion CNC II</h3>
+                </a>
+            <h5>INADEH</h5>
+          </div>
+
+          <div class="certificate cs">
+            <a class="certificateTitle" href="files/certificates/activate/analitica.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/eoi.jpg" />
+                  <h3>Curso de Analítica Web</h3>
+                </a>
+            <h5>Escuela de Organizacion Industrial</h5>
+          </div>
+
+          <div class="certificate cs">
+            <a class="certificateTitle" href="files/certificates/activate/cloud.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/eoi.jpg" />
+                  <h3>Curso de Cloud Computing</h3>
+                </a>
+            <h5>Escuela de Organizacion Industrial</h5>
+          </div>
+
+          <div class="certificate cs">
+            <a class="certificateTitle" href="files/certificates/activate/apps.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/ucm.png" />
+                  <h3>Curso de Programación de Apps Móviles</h3>
+                </a>
+            <h5>Universidad Complutense Madrid</h5>
+          </div>
+
+          <div class="certificate cs">
+            <a class="certificateTitle" href="files/certificates/activate/desarrollo-web.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/iei.png" />
+                  <h3>Curso de Introducción al Desarrollo Web</h3>
+                </a>
+            <h5>Instituto de Economía Internacional</h5>
+          </div>
+
+          <div class="certificate misc">
+            <a class="certificateTitle" href="files/certificates/activate/marketing.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/iab.png" />
+                  <h3>Curso Básico de Marketing Digital</h3>
+                </a>
+            <h5>Interactive Advertising Bureau</h5>
+          </div>
+
+          <div class="certificate cs ckt">
+            <a class="certificateTitle" href="files/certificates/coursera/nand2tetris.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/hewb.png" />
+                  <h3>Build a Modern Computer from First Principles</h3>
+                </a>
+            <h5>The Hewbrew University of Jerusalem</h5>
+          </div>
+
+          <div class="certificate cs misc">
+            <a class="certificateTitle" href="files/certificates/edx/linux.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/linux.png" />
+                  <h3>LFS101x.2: Introduction to Linux</h3>
+                </a>
+            <h5>The Linux Foundation</h5>
+          </div>
+
+          <div class="certificate cs">
+            <a class="certificateTitle" href="files/certificates/edx/mean.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/mongo.png" />
+                  <h3>M101x: Introduction to MongoDB using the MEAN Stack</h3>
+                </a>
+            <h5>MongoDB Univeristy</h5>
+          </div>
+
+          <div class="certificate misc">
+            <a class="certificateTitle" href="files/certificates/coursera/typography.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/calarts.png" style="width: 100px; height: auto;"/>
+                  <h3>Introduction to Typography</h3>
+                </a>
+            <h5>California Institute of the Arts</h5>
+          </div>
+
+          <div class="certificate misc">
+            <a class="certificateTitle" href="files/certificates/coursera/angularjs.pdf" target="_blank">
+                  <img class="certificate-logo" src="images/logos/jhopkins.png" />
+                  <h3>Single Page Web Applications with AngularJS</h3>
+                </a>
+            <h5>Johns Hopkins University</h5>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Languages Section
+        ========================================= -->
+    <section class="languages" id="languages">
+      <div class="container">
+        <div class="heading">
+          <h2>Languages</h2>
+          <p>Communicate with more people, learn new cultures</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 languagesArea">
+          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 languages">
+            <span class="chart skilBg" data-percent="100" style=" background-image: url(images/flags/es.svg); background-size: 75px; background-repeat: no-repeat; background-position: center center;">
+                  <span class="percent"></span>
+            </span>
+            <h4>Español</h4>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 languagesArea">
+          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 languages">
+            <span class="chart skilBg" data-percent="100" style=" background-image: url(images/flags/gb.svg); background-size: 75px; background-repeat: no-repeat; background-position: center center;">
+                  <span class="percent"></span>
+            </span>
+            <h4>English</h4>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 languagesArea">
+          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 languages">
+            <span class="chart skilBg" data-percent="25" style=" background-image: url(images/flags/de.svg); background-size: 75px; background-repeat: no-repeat; background-position: center center;">
+                  <span class="percent"></span>
+            </span>
+            <h4>Deutsch</h4>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+    </section>
+
+    <!-- Experience Section
+      ========================================= -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="heading">
+          <h2>Work Experience</h2>
+          <p>Knowledge and skills acquired during my professional career</p>
+        </div>
+
+        <!-- Scarlet Bytes -->
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2" style="text-align: center">
+            <a href="http://www.scarletbytes.com" target="_blank"><img class="work-logo" src="images/logos/sb-icon.png" /></a>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+            <div class="arrowpart"></div>
+            <div class="exCon">
+              <a href="http://www.scarletbytes.com" target="_blank"><img class="work-logo-company" src="images/logos/scarletbytes.svg.png" /></a>
+              <h4>Freelance full-stack developer</h4>
+              <h5>Scarlet Bytes</h5>
+              <h5><i>April 2016 - April 2017</i></h5>
+              <ul style="color: #222; padding-left: 30px;">
+                <li>
+                  Logo, slogan, and website design.
+                </li>
+                <li>
+                  Worked for companies helping with basic graphic design (logo, presentation cards, quotes), and reports and analytics.
+                </li>
+                <li>
+                  Offered responsive web design (pure HTML5 and CSS3, but also worked with Wordpress), app development (using Cordova), and management with hosting (servers), databases, emails, and domains.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ubicate Panama -->
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2" style="text-align: center">
+            <a href="http://www.ubicate.com.pa" target="_blank"><img class="work-logo" src="images/logos/ubicate-icon.png" /></a>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+            <div class="arrowpart"></div>
+            <div class="exCon">
+              <a href="http://www.ubicate.com.pa" target="_blank"><img class="work-logo-company" src="images/logos/ubicate.svg.png" /></a>
+              <h4>Co-founder, developer, designer, marketing</h4>
+              <h5>Ubicate Panama</h5>
+              <h5><i>July 2016 - March 2017</i></h5>
+              <ul style="color: #222; padding-left: 30px;">
+                <li>
+                  Logo, slogan, and website design.
+                </li>
+                <li>
+                  Website and mobile app (android) development. Used pure HTML5 and CSS3 at first, later changed to Wordpress for the website. Cordova was used for the creation of the mobile app.
+                </li>
+                <li>
+                  Helped with marketing, and management of the Facebook page. Also used MailChimp to help spread the word via email to our subscribers.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Electricidad total -->
+        <div class="row workDetails">
+          <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2" style="text-align: center">
+            <img class="work-logo" src="images/logos/et-icon.png" />
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+            <div class="arrowpart"></div>
+            <div class="exCon">
+              <h4>Electrician's Assistant</h4>
+              <h5>Electricidad Total, S.A.</h5>
+              <h5><i>January 2011 - June 2011</i></h5>
+              <ul style="color: #222; padding-left: 30px;">
+                <li>
+                  Assisted with the installation of electrical systems.
+                </li>
+                <li>
+                  Electrical wiring of cabling and associated devices such as switches, distribution boards, sockets.
+                </li>
+                <li>
+                  Interpretation of electrical plans, including residential and commercial.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Porfolio Section
+      ========================================= -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+
+        <div class="heading">
+          <h2>Portfolio</h2>
+          <p>Some of my best work and side projects</p>
+        </div>
+
+        <div class="portfolioFilter">
+          <ul>
+            <li><a href="#" data-filter="*" class="current">Show All</a></li>
+            <li><a href="#" data-filter=".coding">Programming</a></li>
+            <li><a href="#" data-filter=".circuits">Electronics</a></li>
+            <!-- <li><a href="#" data-filter=".music">Music</a></li> -->
+            <li><a href="#" data-filter=".etc">Others</a></li>
+          </ul>
+        </div>
+
+        <ul class="portfolioContainer row">
+
+          <!-- Ubicate -->
+          <li class="etc col-xs-6 col-sm-4 col-md-3 col-lg-3">
+            <div class="lightCon">
+              <a class="fancybox" href="images/portfolio/ubicate.jpg" title="
+                Startup from panama, dedicated in listing the best places to go, to have fun, and for tourism in Panama.
+                I’m cofounder, and worked in the design and development of the website and the mobile app.
+                <br/>
+                <a href='http://www.ubicatepanama.com' target='_blank'>
+                  <h5><strong><i class='fa fa-globe'></i> Go to the website.</strong></h5>
+                </a>">
+              <span title=" "><img src="images/portfolio/ubicate.jpg" /></span>
+              <h3 style="text-align: center;">Ubícate Panamá</h3>
+              </a>
+            </div>
+          </li>
+
+          <!-- libft -->
+          <li class="coding col-xs-6 col-sm-4 col-md-3 col-lg-3">
+            <div class="lightCon">
+              <a class="fancybox" href="images/portfolio/libft.jpg" title="
+                By doing this project, I gained a thorough understanding of data structures and algorithms,
+                hands-on software troubleshooting experience, proper documentation for future maintenance and upgrades
+                <br/>
+                <a href='https://github.com/jraleman/libft' target='_blank'>
+                  <h5><strong><i class='fa fa-github'></i> Go to the repository.</strong></h5>
+                </a>">
+              <span title=" "><img src="images/portfolio/libft.jpg" /></span>
+              <h3 style="text-align: center;">libft</h3>
+              </a>
+            </div>
+          </li>
+
+          <!-- Space Apps -->
+          <li class="etc col-xs-6 col-sm-4 col-md-3 col-lg-3">
+            <div class="lightCon">
+              <a class="fancybox" href="images/portfolio/space_apps.jpg" title="
+                Hackathon Project of the Space Apps Challenge 2016 (an initiative of NASA),
+                that was presented in Panama City, Panama. We also appeared on national television! :D
+                <br/>
+                <a href='http://www.tvn-2.com/nacionales/educacion/Estudiantes-panamenos-participan-competencia-Nasa_0_4467303294.html' target='_blank'>
+                  <h5><strong><i class='fa fa-globe'></i> Me on the news.</strong></h5>
+                </a>
+                <a href='https://github.com/jraleman/marstronics' target='_blank'>
+                  <h5><strong><i class='fa fa-github'></i> Go to the repository.</strong></h5>
+                </a>">
+              <span title=" "><img src="images/portfolio/space_apps.jpg" /></span>
+              <h3 style="text-align: center;">Space Apps Challenge</h3>
+              </a>
+            </div>
+          </li>
+
+          <!-- Estacion Mecatronica -->
+          <li class="circuits col-xs-6 col-sm-4 col-md-3 col-lg-3">
+            <div class="lightCon">
+              <a class="fancybox" href="images/portfolio/mecatronica.jpg" title="
+                 The operation contemplates the process of assembly of cylinders divided into four (4) modules:
+                 The transport, the dispenser, the capping, and the sealing.
+                 The station has a distribution box with power supply, valve block,
+                 maintenance unit, PLC, a control panel and internal control system.
+                 <br/>
+                 <a href='https://www.youtube.com/watch?v=x86xMKtRFEk' target='_blank'>
+                   <h5><strong><i class='fa fa-youtube'></i> Video about the project.</strong></h5>
+                 </a>
+                 <a href='files/portfolio/estacion_mecatronica.pdf' target='_blank'>
+                   <h5><strong><i class='fa fa-file-pdf-o'></i> Download report.</strong></h5>
+                 </a>">
+              <span title=" "><img src="images/portfolio/mecatronica.jpg" alt="" /></span>
+              <h3 style="text-align: center;">Mechatronics Station</h3>
+              </a>
+            </div>
+          </li>
+
+          <!-- Python Games -->
+          <li class="coding col-xs-6 col-sm-4 col-md-3 col-lg-3">
+            <div class="lightCon">
+              <a class="fancybox" href="images/portfolio/pygames.jpg" title="
+                Some python games made years ago.
+                These were what really got me into programming.
+                They are based on Rice University's An Introduction to
+                Interactive Programming in Python, and Principles of Computing.
+                <br/>
+                <a href='https://gitlab.com/jraleman/python-games' target='_blank'>
+                  <h5><strong><i class='fa fa-gitlab'></i> Go to the repository.</strong></h5>
+                </a>">
+              <span title=" "><img src="images/portfolio/pygames.jpg" /></span>
+              <h3 style="text-align: center;">Games in Python</h3>
+              </a>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- Contact Section
+      ========================================= -->
+    <section class="contact" id="contact">
+      <div class="container topCon">
+        <div class="heading">
+          <h2>Contact Me</h2>
+          <p>Don't hesitate, get in touch</p>
+        </div>
+      </div>
+      <div class="row mapArea" id="map"></div>
+    </section>
+
+    <section class="contactDetails">
+      <div class="container">
+        <div class="col-12 conForm">
+
+          <div id="message"></div>
+
+          <form method="post" action="php-mailer/mail.process.php" role="form" id="ajax-contact-form">
+            <div class="row">
+
+              <input name="inputName" id="inputName" type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="Write your name..." required />
+
+              <input name="inputEmail" id="inputEmail" type="email" class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 noMarr" placeholder="Write your email..." required />
+
+              <textarea name="inputMessage" id="inputMessage" rows="60" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Write your message..." required></textarea>
+
+              <input type="submit" id="submit" class="submitBnt" data-loading-text="Wait..." value="Send message" />
+
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Javascript
+    ================================================== -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/stickUp.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.rlightbox.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/mail.form.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+</html>
